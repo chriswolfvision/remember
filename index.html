@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Cophy</title>
+  <meta name="description" content="Counterfactual Learning of Physical Dynamics">
+
+  <link rel="stylesheet" href="https://projet.liris.cnrs.fr/cophy/assets/css/main.css">
+  <link rel="canonical" href="http://localhost:4000https://projet.liris.cnrs.fr/cophy/">
+  <link rel="alternate" type="application/rss+xml" title="Cophy" href="http://localhost:4000https://projet.liris.cnrs.fr/cophy/feed.xml">
+
+  <link rel="shortcut icon" href="https://projet.liris.cnrs.fr/cophy/images/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" href="https://projet.liris.cnrs.fr/cophy/images/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://projet.liris.cnrs.fr/cophy/images/favicon/favicon-16x16.png" sizes="16x16">
+</head>
+
+
+  <body data-spy="scroll" data-target="#header">
+
+    <nav id="header" class="navbar navbar-fixed-side navbar-inverse navbar-fixed-top">
+  <div class="container">
+    
+    <div class="navbar-header">
+      <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://projet.liris.cnrs.fr/cophy/">
+        <span class="navbar-brand-img"><img src="https://projet.liris.cnrs.fr/cophy" alt="" /></span>
+        <span class="navbar-brand-title">Cophy</span>
+        <span class="navbar-brand-description"></span>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+          
+          
+          
+            
+              <li><a href="#cophy">CoPhy <i class="fa fa-angle-right fa-lg fa-margin-left"></i></a></li>
+            
+          
+            
+              <li><a href="#authors">Authors <i class="fa fa-angle-right fa-lg fa-margin-left"></i></a></li>
+            
+          
+            
+              <li><a href="#benchmark">Benchmark <i class="fa fa-angle-right fa-lg fa-margin-left"></i></a></li>
+            
+          
+            
+              <li><a href="#download">Download <i class="fa fa-angle-right fa-lg fa-margin-left"></i></a></li>
+            
+          
+            
+              <li><a href="#paper">Paper <i class="fa fa-angle-right fa-lg fa-margin-left"></i></a></li>
+            
+          
+          <li role="separator" class="divider"></li>
+        
+        
+        
+          
+            
+          
+        
+          
+            
+            
+            <li ><a href="https://projet.liris.cnrs.fr/cophy/publications/">Publications <i class="fa fa-angle-right fa-lg fa-margin-left"></i></a></li>
+            
+            
+          
+        
+          
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <main id="main" class="layout-onepage">
+        
+
+
+    <section
+    id="cophy"
+    class="onepage-block light large cover-image"
+    style="background-image: url('https://projet.liris.cnrs.fr/cophy/images/headers/bg_todwer.png')">
+    <div class="container-fluid">
+        
+        <h2>CoPhy</h2>
+        
+        <div class="content">
+            <center>
+<h3>Counterfactual Learning of Physical Dynamics</h3>
+<img src="images/teaser.png" width="100%" />
+</center>
+
+<p>Understanding causes and effects in mechanical systems is an essential component of reasoning in the physical world. This work poses a new problem of counterfactual learning of object mechanics from visual input. We develop the COPHY benchmark to assess the capacity of the state-of-the-art models for causal physical reasoning in a synthetic 3D environment and propose a model for learning the physical dynamics in a counterfactual setting. Having observed a mechanical experiment that involves, for example, a falling tower of blocks, a set of bouncing balls or colliding objects, we learn to predict how its outcome is affected by an arbitrary intervention on its initial conditions, such as displacing one of the objects in the scene. The alternative future is predicted given the altered past and a latent representation of the confounders learned by the model in an end-to-end fashion with no supervision. We compare against feedforward video prediction baselines and show how observing alternative experiences allows the network to capture latent physical properties of the environment, which results in significantly more accurate predictions at the level of super human performance.</p>
+
+        </div>
+    </div>
+</section>
+
+
+    <section
+    id="authors"
+    class="onepage-block style-color-1"
+    >
+    <div class="container-fluid">
+        
+        <h2>Authors</h2>
+        
+        <div class="content">
+            <center>
+<table>
+	<tr>
+		<td>
+			<a href="https://fabienbaradel.github.io/">
+				<img src="images/fabien.png" height="150px" />
+			</a>
+		</td>
+		<td>
+			<a href="https://nneverova.github.io/">
+				<img src="images/natalia.jpg" height="150px" />
+			</a>
+		</td>
+		<td>
+			<a href="https://julien-mille.github.io/">
+				<img src="images/julien.jpg" height="150px" />
+			</a>
+		</td>
+		<td>
+			<a href="https://www.cs.sfu.ca/~mori/">
+				<img src="images/greg.jpeg" height="150px" />
+			</a>
+		</td>
+		<td>
+			<a href="https://perso.liris.cnrs.fr/christian.wolf">
+				<img src="images/chris.png" height="150px" />
+			</a>
+		</td>
+	</tr>
+	<tr>
+		<td style="text-align: center;">
+				Fabien Baradel
+		</td>
+		<td style="text-align: center;">
+			Natalia Neverova
+		</td>
+		<td style="text-align: center;">
+			Julien Mille
+		</td>
+		<td style="text-align: center;">
+				Greg Mori
+		</td>
+		<td style="text-align: center;">
+				Christian Wolf
+		</td>
+	</tr>
+	<tr>
+		<td style="text-align: center; font-style: italic;">
+				INSA-Lyon, LIRIS
+		</td>
+		<td style="text-align: center; font-style: italic;">
+			Facebook AI Research
+		</td>
+		<td style="text-align: center; font-style: italic;">
+			INSA-Val de Loire, LIFAM
+		</td>
+		<td style="text-align: center; font-style: italic;">
+				Simon Fraser University, Borealis AI
+		</td>
+		<td style="text-align: center; font-style: italic;">
+				INSA-Lyon, LIRIS
+		</td>
+	</tr>
+</table>
+</center>
+
+
+        </div>
+    </div>
+</section>
+
+
+    <section
+    id="benchmark"
+    class="onepage-block light large cover-image"
+    style="background-image: url('https://projet.liris.cnrs.fr/cophy/')">
+    <div class="container-fluid">
+        
+        <h2>Benchmark</h2>
+        
+        <div class="content">
+            <p>We introduce the Counterfactual Physics benchmark suite (COPHY) for counterfactual reasoning
+of physical dynamics from raw visual input. It is composed of three tasks based on three physical
+scenarios: BlocktowerCF, BallsCF and CollisionCF, defined similarly to existing state-ofthe-art environments for learning intuitive physics: Shape Stack (Groth et al., 2018), Bouncing balls
+environment (Chang et al., 2017) and Collision (Ye et al., 2018) respectively. This was done to ensure
+natural continuity between the prior art in the field and the proposed counterfactual formulation.
+Each scenario includes training and test samples, that we call experiments. Each experiment is
+represented by two sequences of synthetic RGB images (covering the time span of 6 sec at 4 fps):</p>
+
+<ul>
+  <li>
+    <p>an observed sequence demonstrates evolution of the dynamic system under the
+influence of laws of physics (gravity, friction, etc.), from its initial state to its final state. For
+simplic ity, we denote A the initial state and B the observed outcome;</p>
+  </li>
+  <li>
+    <p>a counterfactual sequence with an initial state C after the do-intervention, and the counterfactual outcome D.</p>
+  </li>
+</ul>
+
+<p>A do-intervention is a visually observable change introduced to the initial physical setup (such
+as, for instance, object displacement or removal).</p>
+
+<p>Finally, the physical world in each experiment is parameterized by a set of visually unobservable
+quantities, or confounders (such as object masses, friction coefficients, direction and magnitude of
+gravitational forces), that cannot be uniquely estimated from a single time step. Our dataset provides
+ground truth values of all confounders for evaluation purposes. However, we do not assume access to
+this information during training or inference, and do not encourage it.</p>
+
+<p>Each of the three scenarios in the COPHY benchmark is defined as follows.</p>
+
+<center>
+	<h3>BlocktowerCF</h3>
+	<img src="images/cftower.png" width="30%" />
+</center>
+
+<p>Each experiment involves K=3 or K=4 stacked cubes, which are initially at
+resting (but potentially unstable) positions. We define three different confounder variables:
+masses, m∈{1, 10} and friction coefficients, µ∈{0.5, 1}, for each block, as well as gravity
+components in X and Y direction, gx,y∈{−1, 0, 1}. The do-interventions include block
+displacement or removal. This set contains 146k sample experiments corresponding to 73k
+different geometric block configurations.</p>
+
+<center>
+	<h3>BallsCF</h3>
+	<img src="images/cfballs.png" width="30%" />
+</center>
+
+<p>Experiments show K bouncing balls (K=2…6). Each ball has an initial random
+velocity. The confounder variables are the masses, m∈{1, 10}, and the friction coefficients,
+µ∈{0.5, 1}, of each ball. There are two do-operators: block displacement or removal. There
+are in total 100k experiments corresponding to 50k different initial geometric configurations.</p>
+
+<center>
+	<h3>CollisionCF</h3>
+	<img src="images/cfcollision.png" width="30%" />
+</center>
+
+<p>This set is about moving objects colliding with static objects (balls or cylinders). The confounder variables are the masses, m∈{1, 10}, and the friction coefficients,
+µ∈{0.5, 1}, of each object. The do-interventions are limited to object displacement. This
+scenario includes 40k experiments with 20k unique geometric object configurations.</p>
+
+<h2 id="usage">Usage</h2>
+
+<p>Given this data, the problem can be formalized as follows. During training, we are given the
+quadruplets of visual observations A, B, C, D, but do not not have
+access to the values of the confounders. During testing, the objective is to reason on new visual data
+unobserved at training time and to predict the counterfactual outcome D, having observed the first
+sequence (A, B) and the modified initial state C after the do-intervention, which is known.</p>
+
+<p>The COPHY benchmark is by construction balanced and bias free w.r.t. (1) global statistics of all
+confounder values within each scenario, (2) distribution of possible outcomes of each experiment
+over the whole set of possible confounder values (for a given do-intervention). We make sure that the
+data does not degenerate to simple regularities which are solvable by conventional methods predicting
+the future from the past. In particular, for each experimental setup, we enforce existence of at least
+two different confounder configurations resulting in significantly different object trajectories. This
+guarantees that estimating the confounder variable is necessary for visual reasoning on this dataset.
+More specifically, we ensure that for each experiment the set of possible counterfactual outcomes is
+balanced w.r.t. (1) tower stability for BlocktowerCF and (2) distribution of object trajectories for
+BallsCF and CollisionCF. As a result, the BlocktowerCF set, for example, has 50 ± 5% of
+stable and unstable counterfactual configurations.</p>
+
+<p>The exact distribution of stable/unstable examples for each confounder in this scenario is shown below:</p>
+
+<p><img src="images/distribution.png" width="100%" /></p>
+
+<p>All images for this benchmark have been rendered into the visual space (RGB, depth and instance
+segmentation) at a resolution of 448 × 448 px with PyBullet (only RGB images are used in this work).
+We ensure diversity in visual appearance between experiments by rendering the pairs of sequences
+over a set of randomized backgrounds. The ground truth physical properties of each object (3D pose,
+4D quaternion angles, velocities) are sampled at a higher frame rate (20 fps) and also stored. The
+training / validation / test split is defined as 0.7 : 0.2 : 0.1 for each of the three scenarios</p>
+
+        </div>
+    </div>
+</section>
+
+
+    <section
+    id="download"
+    class="onepage-block light large"
+    >
+    <div class="container-fluid">
+        
+        <h2>Download</h2>
+        
+        <div class="content">
+            <p>We propose 2 different versions. We recommend the ligher compressed version.</p>
+
+<h3 id="losslessly-compressed-20gb-version">Losslessly Compressed 20GB version</h3>
+
+<p>Individual frames are stored as .png images.</p>
+
+<h3 id="mpeg4-compressed-560gb--version">MPEG4 Compressed 560GB (!!) version</h3>
+
+<p>Sequences are stored in MPEG4 format.</p>
+
+
+        </div>
+    </div>
+</section>
+
+
+    <section
+    id="paper"
+    class="onepage-block light large cover-image"
+    style="background-image: url('https://projet.liris.cnrs.fr/cophy/')">
+    <div class="container-fluid">
+        
+        <h2>Paper</h2>
+        
+        <div class="content">
+            <p>Fabien Baradel, Natalia Neverova, Julien Mille, Greg Mori, Christian Wolf.<br />
+<i>COPHY: Counterfactual Learning of Physical Dynamics</i>.<br />
+arXiv:1909.12000, 2019 <a href="https://arxiv.org/abs/1909.12000">[arxiv]</a>.</p>
+
+<p><a href="https://arxiv.org/abs/1909.12000">
+<img src="images/paper.png" width="25%" />
+</a></p>
+
+        </div>
+    </div>
+</section>
+
+
+
+    </main>
+
+    <script src="https://projet.liris.cnrs.fr/cophy/assets/js/jquery.min.js"></script>
+<script src="https://projet.liris.cnrs.fr/cophy/assets/js/jquery.parallax.js"></script>
+<script src="https://projet.liris.cnrs.fr/cophy/assets/js/bootstrap.min.js"></script>
+<script src="https://projet.liris.cnrs.fr/cophy/assets/js/trianglify.min.js"></script>
+<script src="https://projet.liris.cnrs.fr/cophy/assets/js/particles.min.js"></script>
+<script src="https://projet.liris.cnrs.fr/cophy/assets/js/main.js"></script>
+
+
+
+  </body>
+
+</html>
